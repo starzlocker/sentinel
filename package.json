@@ -1,0 +1,28 @@
+{
+  "name": "sentinel",
+  "version": "1.0.0",
+  "description": "Projeto extensionista do 3o semestre do IFSP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "eslint --fix && prettier --write src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starzlocker/sentinel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/starzlocker/sentinel/issues"
+  },
+  "homepage": "https://github.com/starzlocker/sentinel#readme",
+  "dependencies": {
+    "prettier": "^3.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0"
+  }
+}

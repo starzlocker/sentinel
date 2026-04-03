@@ -1,28 +1,34 @@
 {
-  "name": "sentinel",
-  "version": "1.0.0",
-  "description": "Projeto extensionista do 3o semestre do IFSP",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "eslint --fix && prettier --write src/",
-    "lint": "eslint .",
-    "format": "prettier --write ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/starzlocker/sentinel.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/starzlocker/sentinel/issues"
-  },
-  "homepage": "https://github.com/starzlocker/sentinel#readme",
-  "devDependencies": {
-    "@eslint/js": "^10.0.1",
-    "eslint": "^10.0.3",
-    "globals": "^17.4.0",
-    "prettier": "^3.8.1"
-  }
+    "name": "sentinel",
+    "version": "1.0.0",
+    "description": "Projeto extensionista do 3o semestre do IFSP",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "precommit": "eslint --fix && prettier --write src/",
+        "lint": "eslint .",
+        "format": "prettier --write ."
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run precommit"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/starzlocker/sentinel.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/starzlocker/sentinel/issues"
+    },
+    "homepage": "https://github.com/starzlocker/sentinel#readme",
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.0.3",
+        "globals": "^17.4.0",
+        "husky": "^9.1.7",
+        "prettier": "^3.8.1"
+    }
 }

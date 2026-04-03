@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "Projeto extensionista do 3o semestre do IFSP",
   "main": "index.js",
-  "husky": {
-    "hooks": {
-      "pre-commit": "eslint ."
-    }
-  },
   "scripts": {
     "precommit": "eslint --fix . && prettier --write .",
     "lint": "eslint .",

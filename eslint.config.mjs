@@ -1,34 +1,35 @@
-import js from "@eslint/js";
-import globals from "globals";
-import { defineConfig } from "eslint/config";
+import js from '@eslint/js';
+import globals from 'globals';
+import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
-  {
-    files: ["**/*.{js,mjs,cjs}"],
-    plugins: { js },
-    extends: ["js/recommended"],
-    languageOptions: { globals: globals.browser },
-    rules: {
-      "no-unused-vars": "warn",
-      "no-undef": "error",
-      "no-console": "off",
+    {
+        files: ['**/*.{js,mjs,cjs}'],
+        plugins: { js },
+        extends: ['js/recommended'],
+        languageOptions: { globals: globals.browser },
+        rules: {
+            'no-unused-vars': 'error',
+            'no-undef': 'error',
+            'no-console': 'error',
 
-      eqeqeq: "error",
-      curly: "error",
+            eqeqeq: 'error',
+            curly: 'error',
 
-      "no-var": "error",
-      "prefer-const": "error",
+            'no-var': 'error',
+            'prefer-const': 'error',
 
-      "arrow-body-style": ["error", "as-needed"],
+            'arrow-body-style': ['error', 'as-needed'],
 
-      "no-multiple-empty-lines": ["error", { max: 1 }],
-      "no-trailing-spaces": "error",
+            'no-multiple-empty-lines': ['error', { max: 1 }],
+            'no-trailing-spaces': 'error',
 
-      "consistent-return": "error",
+            'consistent-return': 'error',
 
-      "no-implicit-globals": "error",
+            'no-implicit-globals': 'error',
 
-      "no-restricted-globals": ["error", "event"],
+            'no-restricted-globals': ['error', 'event'],
+        },
+        ignores: ['.github/', '.vscode/', 'node_modules/'],
     },
-  },
 ]);

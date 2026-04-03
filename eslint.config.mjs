@@ -30,5 +30,6 @@ export default defineConfig([
 
       "no-restricted-globals": ["error", "event"],
     },
+    ignores: [".github/", ".vscode/", "node_modules/"]
   },
 ]);
